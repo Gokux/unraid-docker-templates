@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Beta>False</Beta>
 <Category>CMS:Wordpress:</Category>
 <Date>2019-11-09</Date>
-  <Changes>
-  [center][font size=4]V1[/font][/center]
-  </Changes>
   <Name>wordpress</Name>
   <Description>
     The WordPress rich content management system can utilize plugins, widgets, and themes.[br]
