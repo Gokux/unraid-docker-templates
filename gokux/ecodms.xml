@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ecoDMS</Name>
+  <Repository>ecodms/allinone-18.09:latest</Repository>
+  <Registry>https://hub.docker.com/r/ecodms/allinone-18.09/</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/ecodms/allinone-18.09/</Support>
+  <Overview>ecoDMS 18.09 (apu) Full Installation QNAP &amp;amp; Synology   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <WebUI>https://[IP]:[PORT:17001]/</WebUI>
+  <Icon>https://secure.gravatar.com/avatar/b52fd0ed66fae9aa9a4d71a1f5dae83c.jpg</Icon>
+  <Description>ecoDMS 18.09 (apu) Full Installation QNAP &amp;amp; Synology   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Config Name="Unraid Share Path" Target="/unraid" Default="/mnt/user" Mode="rw" Description="" Type="Path" Display="hidden" Required="false" Mask="false">/mnt/user</Config>
+  <Config Name="Port" Target="17001" Default="" Mode="tcp" Description="Container Port: 17001" Type="Port" Display="always" Required="false" Mask="false">17001</Config>
+  <Config Name="Data path" Target="/srv/data" Default="" Mode="rw" Description="Container Path: /srv/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/DMS/data/</Config>
+  <Config Name="Scaninput path" Target="/srv/scaninput" Default="" Mode="rw" Description="Container Path: /srv/scaninput" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/DMS/scaninput/</Config>
+  <Config Name="Backup path" Target="/srv/backup" Default="" Mode="rw" Description="Container Path: /srv/backup" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/DMS/backup/</Config>
+  <Config Name="Restore path" Target="/srv/restore" Default="" Mode="rw" Description="Container Path: /srv/restore" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/DMS/restore/</Config>
+</Container>
