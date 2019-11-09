@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+<Category>CMS:Wordpress:</Category>
+<Date>2019-11-09</Date>
+  <Changes>
+  [center][font size=4]V1[/font][/center]
+  </Changes>
+  <Name>wordpress</Name>
+  <Description>
+    The WordPress rich content management system can utilize plugins, widgets, and themes.[br]
+    Converted By Community Applications[br]
+    Always verify this template (and values) against the dockerhub support page for the container.
+  </Description>
+  <Registry>https://hub.docker.com/_/wordpress/</Registry>
+  <Repository>wordpress:latest</Repository>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Config Name="Port" Target="80" Default="8055" Mode="" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8055</Config>
+  <Config Name="Database" Target="WORDPRESS_DB_HOST" Default="" Mode="" Description="Database" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Database user" Target="WORDPRESS_DB_USER" Default="" Mode="" Description="Database user" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Database password" Target="WORDPRESS_DB_PASSWORD" Default="" Mode="" Description="Database password" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Database name" Target="WORDPRESS_DB_NAME" Default="wordpress" Mode="" Description="Database name" Type="Variable" Display="always" Required="true" Mask="false">wordpress</Config>
+  <Config Name="Database prefix" Target="WORDPRESS_DB_PREFIX" Default="wp" Mode="" Description="Database prefix" Type="Variable" Display="always" Required="true" Mask="false">wp</Config>
+  <Config Name="AppData Config Path" Target="/var/www/html" Default="/mnt/user/appdata/wordpress" Mode="rw" Description="Container Path: /var/www/html" Type="Path" Required="true" Mask="false">/mnt/user/appdata/wordpress/</Config>  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <WebUI>http://[IP]:[PORT:8055]/</WebUI>
+  <Icon>https://d1q6f0aelx0por.cloudfront.net/product-logos/fcbd05b8-ec7e-4191-80f6-dae8ec3d9d25-wordpress.png</Icon>
+</Container>
